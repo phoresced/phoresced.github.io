@@ -20,9 +20,9 @@ h3 {
 }
 .opening {
   background:rgb(235, 156, 127); 
-  opacity: 90%;
+  opacity: 86%;
   display: flex;
-  flex-wrap: wrap;
+  flex: 2 1 480px;
   padding: 1.8em;
   justify-content: space-evenly;
   color:teal;
@@ -35,27 +35,42 @@ h3 {
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 12px;
+  margin: 5px;
 
-  .jump {
+  #jump {
     background:tan;
-    flex: 1;
+    opacity: 100%;
+    flex: 3 1 96px;
     height: 100%;
     font-size: 18pt;
+    text-align: right;
     justify-self: left;
+    padding: 12px;
+    margin: 2px;
+    align-items: flex-start;
   }
 
   .core {
-    flex: 3;
+    flex: 10 3 288px;
     justify-self: center;
     align-items: center;
     background:transparent;
+    height: 80%;
+    padding: 2px;
+    margin: 0px;
+    border: 8px rgb(334, 200, 140);
   }
 
   #menu {
-    flex: 1;
+    flex: 2 1 96px;
     background:#251135;
-    height: 50px;    
+    height: 50px;   
+    min-height: 40px;
+    max-height: 80px; 
+    min-width: 220px;
     justify-self: right;
     text-align: center;
     border: 3px;
@@ -63,25 +78,36 @@ h3 {
 
   #twitter {
     background:#9982ff;
-    flex: 1;
+    flex: 1 1 96px;
+    height: 200px;
+    min-height: 40px;
+    max-height: 250px;
     justify-self: right;
+    padding: 15px;
+    margin: 2px;
+    border:#251135;
+    border-top-style: double;
   }
 
-  p {
+  p text {
     font-size: 20px;
     color:#3b2409;
-    font-family: monospace;
-    text-align: justify;
+    font-family: helvetica, arial, monospace;
+    text-align: justify, center;
   }
 }
 
-.footer {
-  display:flex;
-  flex: 5;
-  align-items: flex-end;
+.image {
+  border-radius: 5%;
+}
+
+footer {
+  display: block;
+  position: fixed;
   text-align: center;
   font-family: helvetica, arial, sans-serif;
   height: 40px;
-  width: stretch;
+  width: auto;
+  box-sizing: stretch;
   background:coral;
 }
