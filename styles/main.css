@@ -1,0 +1,18 @@
+body {
+  background:
+  linear-gradient(135deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+  linear-gradient(225deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color:#bf9fc4;
+  background-size: 64px 128px;
+  h1 {
+      font-family: 'LemonRegular';
+      font-weight: normal;
+      font-style: normal;
+      color: blueviolet;
+  }
+}
+
+footer {
+  display:grid;
+  grid-area:footer;
+}
