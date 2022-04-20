@@ -12,7 +12,30 @@ body {
   }
 }
 
-footer {
-  display:grid;
-  grid-area:footer;
+.blog{background:tan;}
+.opening {
+  background:rgb(235, 156, 127); 
+  opacity: 80%;
+  grid-column: 1 / 5; 
+  text-align: center;
+  font-family:'LemonRegular', 'Monospace';
+  background-size: contain;
+}
+.twitter{background:#9d8eff;}
+.main{background:transparent;}
+.footer {
+  background:coral;
+}
+.menu{background:#251135}
+.container {
+  font-size: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas:
+    "opening opening opening"
+    "blog main menu"
+    "blog main twitter"
+    "footer footer footer";
 }
