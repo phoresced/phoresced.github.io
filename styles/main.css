@@ -1,4 +1,6 @@
 body {
+  height: 100%;
+  margin: 0;
   background:
   linear-gradient(135deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
   linear-gradient(225deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
@@ -10,32 +12,76 @@ body {
       font-style: normal;
       color: blueviolet;
   }
-}
 
-.blog{background:tan;}
+}
+h3 {
+  font-family:'LemonRegular', 'Monospace';
+  color:#f16422;
+}
 .opening {
   background:rgb(235, 156, 127); 
-  opacity: 80%;
-  grid-column: 1 / 5; 
-  text-align: center;
+  opacity: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.8em;
+  justify-content: space-evenly;
+  color:teal;
+  border-style: dotted;
+  border-width: 3.5px;
+  border-color: rgb(334, 200, 140);
+  border-radius: 60%;
   font-family:'LemonRegular', 'Monospace';
-  background-size: contain;
 }
-.twitter{background:#9d8eff;}
-.main{background:transparent;}
-.footer {
-  background:coral;
-}
-.menu{background:#251135}
+
 .container {
-  font-size: 20px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-areas:
-    "opening opening opening"
-    "blog main menu"
-    "blog main twitter"
-    "footer footer footer";
+  display: flex;
+  justify-content: space-evenly;
+
+  .jump {
+    background:tan;
+    flex: 1;
+    height: 100%;
+    font-size: 18pt;
+    justify-self: left;
+  }
+
+  .core {
+    flex: 3;
+    justify-self: center;
+    align-items: center;
+    background:transparent;
+  }
+
+  #menu {
+    flex: 1;
+    background:#251135;
+    height: 50px;    
+    justify-self: right;
+    text-align: center;
+    border: 3px;
+  }
+
+  #twitter {
+    background:#9982ff;
+    flex: 1;
+    justify-self: right;
+  }
+
+  p {
+    font-size: 20px;
+    color:#3b2409;
+    font-family: monospace;
+    text-align: justify;
+  }
+}
+
+.footer {
+  display:flex;
+  flex: 5;
+  align-items: flex-end;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  height: 40px;
+  width: stretch;
+  background:coral;
 }
