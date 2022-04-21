@@ -18,7 +18,7 @@ h1 {
   font-family: 'LemonRegular';
   font-weight: normal;
   font-style: normal;
-  color: blueviolet;
+  color: #9982ff;
 }
 
 .opening {
@@ -39,56 +39,71 @@ h1 {
 .container {
   display: flex;
   min-height: 80%;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  padding: 12px;
+  padding: 25px;
   margin: 5px;
 }
 
   #jump {
-    background:tan;
+    background:rgb(248, 204, 147);
     opacity: 100%;
-    flex: 3 1 96px;
+    flex: 2 1 96px;
     height: 100%;
     font-size: 14pt;
     text-align: center;
     justify-self: left;
-    padding: 12px;
-    margin: 2px;
+    padding: 5px;
+    margin: 0px;
     align-items: flex-start;
   }
 
   .core {
-    flex: 10 3 288px;
+    flex: 4 2 288px;
     justify-self: center;
-    align-items: center;
+    justify-content: center;
     background:transparent;
-    height: 80%;
+    height: auto;
     padding: 2px;
-    margin: 0px;
+    margin: 10px;
     border: 8px rgb(334, 200, 140);
+    border-style:groove;
+  }
+
+  .core p {
+    text-align: center;
   }
 
   #menu {
     flex: 2 1 96px;
     background:#251135;
-    height: 50px;   
     min-height: 40px;
-    max-height: 80px; 
-    min-width: 220px;
+    max-height: 600px;
+    height: 180px; 
+    min-width: 10%;
     justify-self: right;
+    justify-content: space-between;
     text-align: center;
     border: 3px;
   }
+#menu ul {
+  position:sticky;
+  left: 2px;
+  text-align: left;
+  background-color: #a3e4d3;
+  border-radius: 20%;
+}
 
   #twitter {
-    background:#9982ff;
-    flex: 1 1 96px;
-    height: 200px;
-    min-height: 40px;
-    max-height: 250px;
+    background:#a3e4d3;
+    flex: 2 1 96px;
+    max-width: 280px;
+    min-height: 380px;
+    max-height: 500px;
     justify-self: right;
+    position: absolute;
+    top: 240px;
     padding: 15px;
     margin: 2px;
     border:#251135;
