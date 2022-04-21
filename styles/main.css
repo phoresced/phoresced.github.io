@@ -3,21 +3,24 @@ body {
   margin: 0;
   background:
   linear-gradient(135deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-  linear-gradient(225deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  linear-gradient(225deg, #f7dec1 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
   background-color:#bf9fc4;
   background-size: 64px 128px;
-  h1 {
-      font-family: 'LemonRegular';
-      font-weight: normal;
-      font-style: normal;
-      color: blueviolet;
-  }
-
 }
+
 h3 {
   font-family:'LemonRegular', 'Monospace';
   color:#f16422;
+
 }
+
+h1 {
+  font-family: 'LemonRegular';
+  font-weight: normal;
+  font-style: normal;
+  color: blueviolet;
+}
+
 .opening {
   background:rgb(235, 156, 127); 
   opacity: 86%;
@@ -35,18 +38,21 @@ h3 {
 
 .container {
   display: flex;
+  min-height: 80%;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
   padding: 12px;
   margin: 5px;
+}
 
   #jump {
     background:tan;
     opacity: 100%;
     flex: 3 1 96px;
     height: 100%;
-    font-size: 18pt;
-    text-align: right;
+    font-size: 14pt;
+    text-align: center;
     justify-self: left;
     padding: 12px;
     margin: 2px;
@@ -95,7 +101,6 @@ h3 {
     font-family: helvetica, arial, monospace;
     text-align: justify, center;
   }
-}
 
 .image {
   border-radius: 5%;
@@ -103,11 +108,13 @@ h3 {
 
 footer {
   display: block;
-  position: fixed;
+  position: absolute;
+  bottom: 0;
   text-align: center;
   font-family: helvetica, arial, sans-serif;
-  height: 40px;
-  width: auto;
+  height: 30px;
+  max-height: 10%;
+  width: 100%;
   box-sizing: stretch;
   background:coral;
 }
