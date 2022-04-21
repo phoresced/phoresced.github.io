@@ -8,25 +8,30 @@ body {
   background-size: 64px 128px;
 }
 
+h1 {
+  font-family: 'LemonRegular', 'Helvetica', 'Courier New';
+  font-weight: normal;
+  font-style: normal;
+  color: #16917c;
+  font-size: 45pt;
+}
+
+h2 {
+  font-family: 'LemonRegular', 'Helvetica', 'Monospace';
+  color:#251135
+}
+
 h3 {
   font-family:'LemonRegular', 'Monospace';
   color:#f16422;
-
 }
 
-h1 {
-  font-family: 'LemonRegular';
-  font-weight: normal;
-  font-style: normal;
-  color: #9982ff;
-}
-
-.opening {
+.header {
   background:rgb(235, 156, 127); 
   opacity: 86%;
   display: flex;
   flex: 2 1 480px;
-  padding: 1.8em;
+  padding: 0.5em;
   justify-content: space-evenly;
   color:teal;
   border-style: dotted;
@@ -66,13 +71,24 @@ h1 {
     background:transparent;
     height: auto;
     padding: 2px;
+    padding-top: 0px;
     margin: 10px;
     border: 8px rgb(334, 200, 140);
     border-style:groove;
   }
 
+  .core h2 {
+    background:#fcc4a0;
+    position: relative;
+    top: 0px;
+    align-items: flex-start;
+    text-align: center;
+  }
+
   .core p {
     text-align: center;
+    position: relative;
+    top: 40px;
   }
 
   #menu {
@@ -117,19 +133,22 @@ h1 {
     text-align: justify, center;
   }
 
-.image {
-  border-radius: 5%;
+p.image {
+  border-radius: 10%;
+  max-width: 5% !important;
+  justify-content: center;
 }
 
 footer {
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: 0 !important;
   text-align: center;
   font-family: helvetica, arial, sans-serif;
   height: 30px;
-  max-height: 10%;
   width: 100%;
   box-sizing: stretch;
   background:coral;
+  color: #0b595c;
+  font-weight: bold;
 }
