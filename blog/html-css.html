@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/main.css"
+      media="screen"
+    />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lemon" type="text/css"/>
+    <title>Naomi's Blog - CSS Yoga</title>
+  </head>
+
+  <body>
+
+    <span class="header">
+      <h1>CSS Yoga:</h1>  
+      <h2>The Asana (or Positions) of Elements</h2>
+    </span>
+
+    <span class="container">
+
+      <span id="jump">
+        <h3>Recent blog entries</h3>
+          <p><a href="blog/te-houtaewa-template.html">Template</a></p>
+          <p><a href="https://phoresced.medium.com/a-framework-for-governance-design-53b233627ef3?source=user_profile---------0----------------------------" target="_blank">A framework for governance design</a></p>
+      </span>
+  
+      <span class="core">
+        <h2>Understanding the 'Position' Property in CSS</h2>
+          <div class="blogcontent"><br>
+          <p>It can feel counter-intuitive using CSS to tell "elements" where to sit on a webpage. We might naturally feel more comfortable using our hands to move things around, and for those who grew up using home computers without learning the command line<!--link citation-->, this extension of our hand takes the form of a mouse, represented on-screen with a cursor.</p>
+          <p>Driving the cursor with clicks, we hardly think twice about dragging and dropping things across the screen, like when we move files into new folders, or swords across virtual fruit. Since the development of touch-screens, of course, we literally use our fingers to navigate the items on our screens.</p>
+          <p>When writing a website, we use a different approach to moving things around. Think about a yoga class, with the instructor guiding their students into new positions. In other words, <strong>we can use our words</strong> to inform movement; along with our knowledge of 'anatomy'. Except instead of <em>people</em> doing yoga, it is the pixels on the screen, displaying the content just as we've suggested it should display.</p>
+          <h3>Understanding the anatomy of the webpage</h3>
+          <p>You might be familiar with the terms 'head', 'body' and 'footer' in a webpage. These are relevant, as we will discuss.</p>
+          <p>The core of its anatomy, however, is light. The unit of light we use to measure the area in a screen (or 'viewport') is <strong>pixels</strong>.</p>
+          <p>We can define a specific area of pixels by making a <strong>block</strong> or <strong>inline element</strong>.</p>
+          <p><strong>It is these elements which we are guiding into position</strong> with our use of the complementary languages, <strong>HTML and CSS.</strong></p>
+          <p>Elements are given familial terms: parent, child, sibling, and generically 'descendent'. Just as your hand is the child of your arm (as in, it is nested in a limb), the limbs are children of the torso, and your fingers are descendents of this anatomical structure.</p>
+          <p>Websites inherently understand the word 'body' to mean the bulk of the content; likewise, that the 'footer' is the sliver of content at the bottom of the page: but, as I discovered this week, it doesn't always stay at the bottom! 
+          <p>Let's increase our understanding about positioning elements so that the content of our website is always just where we want it to go. Like with any good yoga practice, we're gonna want to stay out of our head(er).</p>
+        <div><h3>The possible properties of position</h3></div>
+          <p>There are five different properties available to position our elements.
+          <br>In this blog post, we will only focus on the three which are underlined here.</p>
+          <span>
+            <ol>
+              <li>Static</li>
+              <li><u>Absolute</u></li>
+              <li><u>Relative</u></li>
+              <li><u>Fixed</u></li>
+              <li>Sticky</li>
+            </ol>
+          </span>
+
+          <h3>Absolute</h3>
+          <p class="image"><img src="../image-directory/example-absolute.png" alt="Example of CSS using Absolute positioning"></p>
+          <p>The property 'absolute' can be used to guarantee the placement of your element. In the example above, I instructed the footer to behave as a block element, with the words <code>'display:block'</code> because I find it the most straightforward type of element to position - and <strong>absolute positioning can get quite complicated</strong>, quite quickly!</p>
+          <p>This is largely due to the fact that it <strong>removes the element from the flow</strong> i.e. the structure that we're building so carefully in our body. As I'm working on the footer, it is the most nether element that I need to place, so I don't need it to flow with the rest of the content.</p>
+          <p>An absolute element is positioned <em>relative to its parent</em>. In this case, the footer is nested <u>in the body itself</u> so that it doesn't conflict with other styling arrangements in the overall layout of the webpage.</p>
+          <p>Previously, my footer would fly up the screen when I was scrolling down. With the default 'static' position, it sat at the bottom of the <em>initial view</em> when I opened the page, but that was the wrong thing to be <strong>relative to</strong>.<br>To make <strong>absolutely sure</strong> that there wouldn't be a gap between the footer and the bottom of the page, I gave it a negative value <em>relative to the bottom of the body</em> (its parent element).</p>
+          <p>Now, nothing in the body will get below it. It's absolutely placed, </p>
+          <p>right down the bottom.</p>
+          
+          <h3>Relative</h3>
+          <p class="image"><img src="../image-directory/example-relative.png" alt="Example of CSS using Relative positioning"></p>
+          <p>The property 'relative' is much more flexible than 'absolute'.</p>
+          <p>In the example above, I am styling the <strong>text</strong> within a box called "core". The text is written in paragraph tags, so I select it with the 'p'.</p>
+          <p>No matter what is above the paragraph, I want there to be 5 pixels of space. 
+          <br>If I gave the position the 'absolute' property, it would be removed from the rest of the body structure. This could result in overlapping content, unless I measure and define: the width, height, margin, border, and padding, for <em>everything else in the body</em>, and send them to the left, right, top, or bottom of these paragraphs. That just wouldn't work: the quantity of paragraphs changes the height from page to page, and other children of my 'core' container need to relate to the contained paragraphs.</p>
+          <p>This relative positioning makes the most sense, and is friendly across screen sizes.</p>
+
+          <h3>Fixed</h3>
+          <p class="image"><img src="../image-directory/example-fixed.png" alt="Example of CSS using Fixed positioning"></p>
+          <p>When the position is given the 'fixed' property, it is unaffected by scrolling up and down (or across) the page.</p>
+          <p>The position is not relative to other elements at all - it becomes relative to the screen, or 'viewport'.</p>
+          <p>In the example above, I can tell my Menu element to sit 50px from the top of the screen and 5px from the right of the screen at all times, no matter how far down my visitors want to explore.</p>
+          <p>This is a very effective choice for any navigation function on a website, or your annoying sales funnel.</p>
+
+          <h3>Summary: Choosing the right position property</h3>
+          <p>It's important to understand the different outcomes of these properties so the flow of content on the website fits well together. As you may have realized, the positioning of individual (or the collective 'container' of) elements can have a big impact on all the elements around them.</p>
+          <p>The <strong>absolute</strong> property will follow the yoga teacher's instructions, even if that means crashing into the person practicing beside them. 
+            <br>They are out of the flow of the group.</p>
+          <p>The <strong>relative</strong> property is more accommodating and flexible; the fingers can be lifted off the ground while the palm of the hand stays flat, even as the hips move backwards. This lets us make specific styling adjustments that stay in the flow with the elements around us.</p>
+          <p>The <strong>fixed</strong> property is not positioned with regard to other elements. It will keep its place on the screen no matter where we go, so could occasionally obscure other important content on the page. It's as though someone was doing yoga up in the mezzanine, and since we are recording our class from cameras on the roof, we can't see anyone or anything below the mezzanine. Provided everything needs to be seen, we will accommodate this high-altitude dimension when we frame the shot, by adding space (e.g. with padding) in the general area 'under' where our fixed elements will show up (the top, bottom, left, or right).</p>
+          <h3>Being mindful</h3>
+          <p>When choosing the position property for your elements, think about how much scrolling will take place on the page (if any), whether you're designing mobile-first or for larger screens (or both), and think about the parents to the element you're positioning. Absolute elements are relative to their parent, relative elements are relative to themselves, and fixed elements are relative to the screen. And we're all relatives in the web of life! &#128516;</p>
+          <br>
+        </div>
+      </span>
+      
+      <div id="menu">
+        <h3>Menu</h3>
+        <ul>
+          <br><br>
+          <li><a href="https://phoresced.github.io/">Back to homepage</a>.</li>
+          <li><a href="https://phoresced.github.io/blog">Back to blog archive</a>.</li>
+          <br><br>
+        </ul>
+      </div>
+    </span>
+   </body>
+  <footer></footer>
+</html>
