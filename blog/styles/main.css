@@ -1,0 +1,247 @@
+body {
+  height: 95%;
+  width: 95%;
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 30px;
+  background: linear-gradient(
+      135deg,
+      #f7dec1 21px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #f7dec1 21px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: #bf9fc4;
+  background-size: 64px 128px;
+}
+
+h1 {
+  font-family: 'LemonRegular', 'Helvetica', 'Courier New';
+  font-weight: normal;
+  font-style: normal;
+  color: #16917c;
+  font-size: 45pt;
+}
+
+h2 {
+  font-family: 'LemonRegular', 'Helvetica', 'Monospace';
+  color: #251135;
+  font-size: 25pt;
+}
+
+h3 {
+  font-family: 'LemonRegular', 'Monospace';
+  color: #f16422;
+}
+
+.header {
+  background: rgb(235, 156, 127);
+  opacity: 86%;
+  display: flex;
+  flex: 2 1 480px;
+  padding: 1em;
+  margin: 2em;
+  min-height: 150px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: teal;
+  border-style: dotted;
+  border-width: 3.5px;
+  border-color: rgb(334, 200, 140);
+  font-family: 'LemonRegular', 'Monospace';
+  z-index: -1;
+}
+
+.header h2 {
+  position: relative;
+  align-self: flex-end;
+}
+
+.container {
+  display: flex;
+  min-height: 80%;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 25px;
+  margin: 0px;
+}
+
+
+#jump {
+  background: rgb(248, 204, 147);
+  opacity: 100%;
+  flex: 2 1 96px;
+  height: 100%;
+  font-size: 14pt;
+  text-align: center;
+  justify-self: left;
+  padding: 5px;
+  margin: 0px;
+  align-items: flex-start;
+}
+.core {
+  flex: 4 2 288px;
+  justify-self: center;
+  align-self: flex-start;
+  justify-content: center;
+  background: transparent;
+  height: auto;
+  min-height: 300px;
+  padding: 2px;
+  padding-top: 0px;
+  margin: 10px;
+  border: 8px rgb(334, 200, 140);
+  border-style: groove;
+}
+
+.core h2 {
+  background: #fcc4a0;
+  position: relative;
+  top: 1px;
+  padding: 15px;
+  margin: 0px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.blogcontent {
+  background: #0e9c6d;
+  opacity: 90%;
+  position: relative;
+  margin-top: -20px;
+  z-index: -1
+}
+
+.blogcontent h3 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0;
+  color:#f38c5c
+}
+
+.blogcontent p {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  padding: 1em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.blogcontent code {
+  color: black;
+  background:rgb(248, 204, 147);
+  opacity: 40%;
+}
+
+.blogcontent ol {
+  font-size: 18pt;
+  position: relative;
+  left: 40%;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+  flex: 2 1 96px;
+  background: #251135;
+  min-height: 40px;
+  max-height: 600px;
+  height: 220px;
+  min-width: 20%;
+  justify-self: right;
+  justify-content: space-between;
+  align-content: space-evenly;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+#menu ul {
+  position: sticky;
+  min-height: 20px;
+  max-height: 400px;
+  text-align: left;
+  background-color: #a3e4d3;
+  border-radius: 0% 50% 0% 50%;
+  z-index: 2;
+}
+
+#test {
+  display:block;
+  padding: 5px;
+  position: fixed;
+  justify-self: right;
+  top: 50px;
+  right: 10px;
+  z-index: 0;
+}
+
+#twitter {
+  background: #a3e4d3;
+  flex: 2 0 96px;
+  min-width: 96px;
+  max-width: 280px;
+  min-height: 380px;
+  max-height: 500px;
+  justify-self: right;
+  position: relative;
+  scroll-margin-right: 5px;
+  top: 20px;
+  padding: 15px;
+  margin: 2px;
+  margin-bottom: 40px;
+  border: #251135;
+  border-top-style: double;
+  z-index: 1;
+}
+
+p {
+  font-size: 20px;
+  color: #2b0a1a;
+  font-family: helvetica, arial, monospace;
+  text-align: justify, center;
+}
+
+.image {
+  border: 5px;
+  margin: 5px;
+  flex: 2 1 96px;
+  position:relative;
+  align-content: center;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: -10 !important;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  height: 30px;
+  width: 100%;
+  background: coral;
+  color: #0b595c;
+  font-weight: bold;
+}
