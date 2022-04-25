@@ -94,9 +94,10 @@ h3 {
   text-align: center;
   justify-self: left;
   padding: 5px;
-  margin: 0px;
+  margin: 5px;
   align-items: flex-start;
 }
+
 .core {
   flex: 4 2 288px;
   justify-self: center;
@@ -104,12 +105,16 @@ h3 {
   justify-content: center;
   background: transparent;
   height: auto;
-  min-height: 300px;
+  min-height: 700px;
   padding: 2px;
   padding-top: 0px;
   margin: 10px;
   border: 8px rgb(334, 200, 140);
   border-style: groove;
+  background: #0e9c6d;
+  opacity: 90%;
+  margin-top: -20px;
+  z-index: -1
 }
 
 .core h2 {
@@ -134,22 +139,14 @@ h3 {
   z-index: 1;
 }
 
-.blogcontent {
-  background: #0e9c6d;
-  opacity: 90%;
-  position: relative;
-  margin-top: -20px;
-  z-index: -1
-}
-
-.blogcontent h3 {
+.core h3 {
   text-align: center;
   padding-top: 5%;
   padding-bottom: 0;
   color:#f38c5c
 }
 
-.blogcontent ul {
+.core ul {
   text-align: left;
   text-justify: inter-word;
   font-size: 18px;
@@ -164,13 +161,13 @@ h3 {
   z-index: 1;
 }
 
-.blogcontent code {
+.core code {
   color: black;
   background:rgb(248, 204, 147);
   opacity: 40%;
 }
 
-.blogcontent ol {
+.core ol {
   font-size: 16pt;
   position: relative;
   left: 30%;
@@ -183,40 +180,37 @@ h3 {
   background: #251135;
   min-height: 40px;
   max-height: 600px;
-  height: 220px;
-  min-width: 20%;
+  height: 200px;
+  width: 20%;
   justify-self: right;
   justify-content: space-between;
   align-content: space-evenly;
-  text-align: center;
+  text-align: right;
   padding: 0px;
-  margin: 0px;
-  z-index: 1;
+  margin: 5px;
+  z-index: 2;
+}
+
+#menu h3 {
+  margin-right: 20px;
+  font-size: 24pt;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: -10px;
 }
 
 #menu ul {
-  position: sticky;
   min-height: 20px;
   max-height: 400px;
   text-align: left;
   background-color: #a3e4d3;
   border-radius: 0% 50% 0% 50%;
-  z-index: 2;
-}
-
-#test {
-  display:block;
-  padding: 5px;
-  position: fixed;
-  justify-self: right;
-  top: 50px;
-  right: 10px;
-  z-index: 0;
+  z-index: 3;
 }
 
 #twitter {
   background: #a3e4d3;
-  flex: 2 0 96px;
+  flex: 2 1 96px;
   min-width: 96px;
   max-width: 280px;
   min-height: 380px;
@@ -250,8 +244,8 @@ p {
 
 footer {
   display: block;
-  position: absolute;
-  bottom: -10 !important;
+  position: fixed;
+  bottom: 0em;
   text-align: center;
   font-family: helvetica, arial, sans-serif;
   height: 30px;
