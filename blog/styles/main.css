@@ -132,6 +132,15 @@ h3 {
   color:#f38c5c
 }
 
+.super embed {
+  margin: 2em;
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  min-height: 1000px;
+  flex-wrap: nowrap;
+
+}
 .core ul {
   text-align: left;
   text-justify: inter-word;
