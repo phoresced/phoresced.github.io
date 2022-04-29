@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>noms blog - JS & the DOM</title>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lemon" type="text/css"/>    
+      <script src="magic-robot.js"></script>
+    </head>
+
+  <body>
+    <span class="header">
+      <h1>Naomi Joy Smith</h1> 
+    </span>
+
+    <span class="container">
+      
+      <span class="core">
+        <h2>Let's talk about DOMs baby, let's talk about Ja-va-script!</h2>
+        <p class="text"> 
+          Hey, good to see you again! You're looking great. 
+          <br>Would you like a tea? A muffin? Some eggs? This blog is about to get juicy so I recommend we brew a cup of java... unless you've already had enough today?
+        </p>
+        <p>In any case, let's settle in and talk about everything I've been learning this week. 
+          <br><strong>Thanks so much for coming over to listen.</strong></p>
+        <h3>Remember HTML and CSS?</h3>
+        <p>Okay, a refresher.
+          <br>HTML and CSS are both languages which make things happen on a website, and they're essentially complementary opposites.
+        </p>
+        <p>HTML is like the skeleton, the bones in your body.
+          <br>CSS is the external elements of your body; your skin, eye and hair colour, hair length, clothes, makeup (if you want it).
+          <br>You do need some of those things, while others are purely decorative. If I wanted to whisper in your ear, I need to locate your ear, and position myself in relation to it.
+          <br>The mechanism of the ear needs to be linked to the external representation - just like the HTML and the CSS need to be linked so someone can navigate a website.
+        </p>
+        <p>Does that make sense so far?<br>Cool.</p>
+        <p>So how does Javascript fit into that?</p>
+        <p>Imagine all the other systems and processes contained in your body which make it function. We introduce these functions by using Javascript.</p>
+        <p>Whether it's white blood cells pumped by the heart, or food being accessed for energy, these functions are interactive - they listen for changes in your state and respond with the appropriate elements and measures.</p>
+        <p>If your skeleton doesn't have a space to carry an area of your body, then you can't write a function for it. So we have to link the javascript back to the HTML.</p>
+        <p>As a human interacting with this body, I still need to navigate the webpage in order to cause things to happen, so I need CSS to tell me where your ear is.</p>
+        <p>But even if my noises rattled your ear bones, the sound would have no meaning without a brain function who could pass those noises into your sensemaking center. We use Javascript functions to make sense of the interactions being performed on and with the website.</p>
+        <h3>Control flow and loops in Javascript</h3>
+        <p>Now imagine you are cooking dinner. Whether you're following an existing recipe or improvising, you'll want to sequence the steps so every ingredient cooks and infuses at the right time.</p>
+        <p>In javascript, we have a few tools to ensure things happen at the right time. 
+        <p>We set a flow running with <strong>events</strong>, rather than making every possible action happen as soon as a page is loaded. This is important for guiding interactions. Maybe the vistor on my page needs to click a button to make something happen. Unless they click the button, I don't have permission to trigger the response.
+        <br>So I code something to watch for an action or state, like "onions have softened", and then a flow is triggered, "add garlic". If that ingredient was added at the same time as the onions, it would burn, because it takes less time to cook.</p><br>
+        <p>Another tool we can use is <strong>loops</strong>.
+        <br>The loop recurs as many times as it needs to until something stops it. Kinda like your culinarily-ignorant friend helping you stir the onions so they don't burn. You give them one instruction: stir. The loop follows a motion on the webpage within the conditions that we set. It might listen for new form submissions, or clicks, or enter keys; and it can count the total amount of times that somethings happens, because unlike your hungry friend, the loop is an algorithm who loves maths.
+        If we tell it to count, it's not going to lose count. It just keeps stirring the pan and logging stirs.</p>
+        <p>This tool can be helpful in a lot of ways when we're controlling the flow of functions on our webpage. We don't need to write new functions every time we want to pan to be stirred, we just tell our algorithm friend to repeat until, let's say, the tomatoes are added <em>plus five more stirs</em> (to get that tomato nicely mixed in there.</p>
+        <h3>The DOM (Document Object Model)</h3>
+        <p>Javascript knows how to interact with the internet because it has a model of the structure like blueprints to the bank vault. It knows where all the keys are hidden and which door goes where.</p>
+        <p>Every website is written in a document, usually of the HTML kind, and we know how they work.</p>
+        <p>Compared to human anatomy, these documents can grow virtually infinite limbs, called Objects. So whenever a new <strong>Object</strong> is made in the <strong>document</strong>, the <strong>model</strong> follows this and the related blueprint information is copied over. <br><br>
+          <img class="image" src="image-directory/js-dom-html-dom.jpg">
+          <br><sup>Oh, you want to grow an image? I know how images behave. Let me load up some possible things that an image might do.</sup></p>
+          <p>We can follow the model to inspect the code on any website and figure out what's going on, as well as playing with how we might change the objects, slightly or dramatically.</p>
+          <p>I might want to see what would happen if I put more padding in each paragraph. Or I might look into what processes are triggered automatically when I press the red button and make a more conscious decision about clicking random buttons on strangers' websites.</p>
+          <p>And we don't have to be on a site to play with the DOM - we can just load a javascript file and manipulate the model in our code editing app. If you tell the model to do something, then push those new instructions to the original HTML file (assuming you have permission to do that), then the changes will occur. <br>So even though it's called a model, it's not a model as muggles know them to be.</p>
+          <h3>Arrays and Objects</h3>
+          <p>So, we want to make something happen to our meal. We've written instructions so that our wizard robot friend could cook it for us while we're driving home. How does it access the data to follow?</p>
+          <p>We might use <strong>arrays</strong> when our instructions relate to a <strong>list</strong>; like a collection of things or possible choices. When the instructions relate to individual things which potentially have no relationship, they would each need to be written as an <strong>object</strong>.</p>
+          <p>An array can be inserted as a category (aka key) nested in the object as one of its pockets of data; likewise the items listed in the array can be given properties if we wrote them as objects. Let's go back to our stove and figure out what that means for our meal.</p>
+          <p>-----</p>
+          <p>We're making a curry. The onions, garlic and tomatoes are already simmering away, great, that's the basics taken care of. But what else should go in?</p>
+          <p>We could use an array to list all the vegetables we like. We'd like to reference this list and select two of the items in the list, at random perhaps. <p>But do we have any in the fridge? How about the pantry? The freezer?</p>
+          <p>The array lists cauliflower, potato, peas, carrot, okra.</p>
+          <p>Each of these will also be defined in javascript as an object. We want to keep stock of whether each vegetable is available and where it's stored. So we might write this object:</p>
+          <code>let cauliflower = {
+            pantry: 0,
+            fridge: 1,
+            freezer: 0
+          }
+          </code>
+          <p> Pantry, fridge and freezer are <strong>keys</strong> and while maybe we can't rob a bank with these keys, we can certainly learn where our friend should look in the house for ingredients.</p>
+          <p>And if I brought more carrots home, I could log them when I get home by referencing the <strong>object</strong> and then the <strong>key</strong> and telling it to count +1 for each carrot I restocked.</p>
+          <br>
+          <p>We might write a condition in the <strong>selectVeges</strong> function which ignores any vegetable in the array whose total stock count is 0.</p>
+          <p>So our wizard robot friend can choose any two of the items in the array whose object properties are greater than or equal to 1. <em>But how do we get the data from an array?</em></p>
+          <br>
+          <p>Arrays will count <em>incrementally</em> (so, the usual way of counting - a sequence where the next item counted is +1 from the last item), and it starts its count at <strong>0</strong>.</p>
+          <p>To get the data about carrots, we query item 3, because cauliflower is 0, potato is 1, peas are 2, and the next increment is 3. <u>We listed carrots after peas and before okra</u>. This matters as the position assigns the number.</p>
+          <p>So using our array name and counting the stock of every "position in the array", we learn that veges[0]=1, veges[1]=5, veges[2]=1 and so on. We have one cauliflower, five potatoes, 1 bag of peas, etc.</p>
+          <br>
+          <p>Our friend selects the potatoes and cauliflower, and returns them from the pantry and the fridge, respectively.</p>
+          <br><p>Looks like we're having aloo gobi tonight!</p>
+          <h3>Functions</h3>
+          <p>Now that our meal's sorted, we can return to our original comparison of HTML, CSS and Javascript, and the analogy of the bodily functions being written in the language of JS.</p>
+          <p>To be more specific about functions, let's think about how many different things can be going on in even a simple interactive website these days.</p>
+          <p>We live in the age of social media, where we are constantly reacting to posts, bookmarking things for later, making connections, sharing things... the interactivity is what we love about the internet.</p>
+          <p>Because these are recurring actions, we want to write code which recognizes that action no matter when or how often it might occur.</p>
+          <p>We give the function a name, some round brackets, and a whole lot of statements inside some curly brackets. These statements know what to check for, and can get really complicated, like giving a different output to different people depending on what it knows about them (like, are they logged in? Do they have adminstrative permissions? and whatever other data you feel comfortable sharing with potentially anonymous web developers).</p>
+          <p>The function gets triggered whenever it gets called elsewhere in the script. Maybe we simply write its name and put some round brackets there, (), like opening a portal.</p>
+          <p>Or, we don't want the webpage to just rush ahead and perform the function, so we associate it to an event like 'onclick' or 'keyup' (i.e. our website visitor clicks the related button, or finishes pressing a button.)</p>
+          <p>That's it! Duplicate the function immediately by calling it in the context of whatever else is going on.</p>
+          <p>It saves a whole lot of time and work because the code only has to refer to the original function in order to process an action, and we can pack a lot of stuff in between those curly brackets.</p>
+          <h3>Summary</h3>
+          <p>Javascript has a lot of fun tools that brings a simple skinned skeleton alive with living, breathing processes. We anticipate humans to come along and animate the space, and are able to make things happen anew for every vistor, and in a relationship with them that can build over time, as data references other data, triggers functions, and gives the code a purpose for being.</p>
+          <p>So what kind of portals do we want to open up? What can this new life form do with its existence? A lot of good, bad and <a href="http://www.easydamus.com/chaoticneutral.html">chaotic neutral</a> outcomes are possible with this magic wizard language.</p>
+          <p>See you next time, and don't let the magic robot hit you on the way out.</p>
+          <br><br>
+      </span>
+
+      <div class="menu">
+        <h3>Menu</h3>
+        <ul>
+          <br>
+        <li><a href="#">Blog Roll</a></li>
+        <li><a href="https://nextstepnaomi.com" target="_blank">Projects</a></li>
+        <li><a href="https://link.bar/naomi" target="_blank">Links</a></li>
+        <li><a href="mailto:hmu@nextstepnaomi.com">Contact</a></li>
+          <br><br>
+        </ul>
+        <div id="twitter">
+          <div>
+          <a class="twitter-timeline" data-width="280" data-height="440" data-dnt="true" href="https://twitter.com/phoresced?ref_src=twsrc%5Etfw">Sometimes Naomi tweets</a> 
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+          </div>
+        </div>
+      
+      </div>
+    </span>
+
+    <footer> &#128099; Made with curiosity by noms kinself &#128099;
+    </footer>
+  </body>
+
+
+</html>
