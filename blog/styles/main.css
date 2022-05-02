@@ -114,22 +114,31 @@ h3 {
 }
 
 .core p {
-  text-align: center;
+ background: #a3e4d3;
+ border-color:#a3e4d3;
+ border-width: 25px;
+ border-radius: 25%;
+  text-align: left;
   font-size: 18px;
   position: relative;
   top: 5px;
-  padding: 1em;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding: 10em;
+  padding-top: 8px;
+  padding-bottom: 8px;
   justify-content: space-around;
   z-index: 1;
 }
 
 .core h3 {
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 0;
-  color:#f38c5c
+  padding-top: 2em;
+  padding-bottom: 1em;
+  color: #f38c5c;
+  font-size: 18pt;
+  text-shadow: #f16422;
+  border-color: #a3e4d3;
+  border-width: 15px;
+  border-radius: 25%;
 }
 
 .super embed {
