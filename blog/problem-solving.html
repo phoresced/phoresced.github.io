@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>noms blog - Problem Solving</title>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lemon" type="text/css"/>    
+    </head>
+
+  <body>
+    <span class="header">
+      <h1>Naomi Joy Smith</h1> 
+    </span>
+
+    <span class="container">
+      
+      <span class="core">
+        <h2>Problem Solving</h2>
+        <p class="text"> 
+          Thinking like a developer means having reliable processes for solving problems. Once we feel confident in our ability <em>to</em> work out a problem, the rest is just learning the tools and techniques available to us (e.g. commands, methods, syntax).
+        </p>
+        <p>
+          In this blog post, I'm going to share a couple of examples from times when I've been deep in the mud with a problem. We'll reflect on problem-solving techniques, emotions, and the learning that was derived from my effort.
+        </p>
+        <h3>Example: FizzBuzz</h3>
+        <p>
+          Let's start with a situation which was frustrating yet nonetheless, I feel proud about how I approached the problem.
+        </p>
+        <p>
+          Before I had tried to solve the FizzBuzz challenge (returning a sequence from 1-100 using javascript, and replacing certain multiples with certain words - fizz, buzz, and fizzbuzz), I had encountered its reputation. Not only do we need to know how to return an increment of integers but to also ask the computer to recognizes three different conditions - when the sequence produced a multiple of 3, of 5, and of <em>both three <strong>and</strong> five</em>.
+        </p>
+        <p>
+          In the version that my cohort were instructed to complete, we had two functions, and had to send an array through the second function, superFizzBuzz; so an additional limitation was provided in our approach to the problem, which served as guardrails (guiding us toward a solution) but also presented its own obstacle.
+        </p>
+        <p>
+          This obstacle blocked me for a while. Let's explore my methods for problem solving, my emotions, and how I finally resolved this block.
+      </p>
+        <ol class="list">Let's go over the steps I took:
+          <br>
+          <li>Reduce the problem to a series of steps, using pseudocode.
+            <br>This enabled me to get clear on my approach and served as a space to reflect on whether my logic was sound. The first pass wasn't extremely detailed but I was able to reduce one important component: instead of writing some complicated code with <strong>"&&"</strong> for the computer to identify a multiple of <strong>both 3 and 5</strong>, I could present it with the lowest common denominator, 15, and instruct every multiple of 15 to return the corresponding phrase, 'FizzBuzz'.</li>
+          <li>Have a go solving the problem.
+            <br>This wasn't an immediate success, but it took me to the next point and showed me where my logic could be refined.
+          </li>
+          <li>Browse online for resources that could shine some light on my syntactical errors
+            <br>...basically asking myself, 'do I know what I need to know in order to implement this pseudocode?'... and deploying the 'just in time' learning approach.</li>
+          <li>Reading the conversations that my cohort have previously had about this challenge
+            <br>I really enjoy learning by observing others thought processes, but there is a dangerous thorn in this approach... suddenly I find my ego going into comparison mode, sending me dark thoughts about my level of intelligence, my abilities, and casting doubt on whether I should even be here. Am I capable of this? Is this style of thinking much more intuitive to everyone but me??
+          </li>
+          <li>So I took a break, feeling the frustration and doubt overload my ability to think clearly. It was late, so I parked this challenge for the day. By the time I woke up, the new neural connections were starting to firm up, and it was easier.
+            <br>But let's explore those emotions for a moment...
+          </li><br>
+        </ol>
+        <h3>That doubt, them comparisons</h3>
+        <p>Learning to code has shown me that my confidence is a lot more fragile than I had thought. It's been so easy to doubt whether I'll ever grasp these concepts, and I've noticed myself looking for something or someone to blame. "This is too hard for beginners", I'll think, or "the instructions are so vague... <strong>it's not my fault!</strong>"
+        </p>
+        <p>
+          Yes, this stuff is hard. And it's natural that our nervous system begins to respond to stress by searching for methods to feel better. The trick is to practice new patterns so this stress doesn't overwhelm us or cause friction and pain in other areas.
+        </p>
+          <ul class="list">Some practices I find helpful are: 
+            <li>Honouring the commitment I've made to persevere through difficulties;</li>
+            <li>Returning to my body and my breath so I can notice what I'm experiencing and not simply reduce my awareness to the bad feeling: instead, I create space around the situation and my response to it;</li> 
+            <li>In that space I bring compassion. This is absolutely worth practicing throughout our lives, because the more compassion, the merrier. It can be really tough to show ourselves compassion, but in these moments of doubt, it makes all the difference.</li> 
+          </ul>
+        <p>
+          Stepping back and honouring that there was more to the story than what my ego was reacting to, I was telling myself, 
+          <br><br><strong>"I believe in you. </strong>You might not be there yet, but you're on your way".
+        </p>
+        <h3>Getting unblocked</h3>
+        <p>
+          So I've woken up from a good full sleep and in my morning journal, I explore what I might do about this block, deciding that I could ask someone about a fundamental question I have.
+        </p> 
+        <p>
+          I start writing to my friend, "Hey just checking, surely we don't need to write the whole array from 0-100, right? Like, it should be possible to write a loop with creates the array..." and then I stop. DUH! That's what I need to do.
+        </p>
+        <p>
+          This is a problem solving technique, called the Rubber Ducky method.
+          <br>The idea is that, we don't always need to ask someone to advise us on a problem, because there are solutions somewhere inside us... we just need to order our thoughts as though we were explaining the problem to someone, filling them in on the context. In that process, we are surfacing clues which our conscious mind cottons on to, and new insights emerge.
+        </p>
+        <p>
+          Suddenly I had this great idea about approaching the problem differently, and I was ready to move on. But take a couple steps, and BOOM! The big block happened.</p>
+        <p>
+          I was <em>sure</em> my logic was sound. My loop looked good. Checking others' attempts validated this approach. Why wasn't it working?!</p>
+        <p>
+          Feeling stumped, I went back to the beginning. Remember the first thing I did to understand the problem? I broke it down into steps. But I missed the most important step of all:
+          <br><strong>I didn't really understand the problem.</strong>
+        </p>
+        <p>
+          I was writing the loop in the superFizzBuzz function and the conditionals in the FizzBuzz function. I hadn't understood what the Super guardrails wanted from me. <em>Could it be that this simple confusion was behind my errors?</em>
+        </p>
+        <p>
+          I wrote to my facilitator to ask about these functions. Before she could reply, I noticed that a sample solution was provided in the repo. I took a peek and a wave of hope washed over me: my logic was good, I was understanding these concepts and applying them accurately, just not in the right flow. Bingo!
+        </p>
+        <p>
+          This situation taught me that sometimes the difficulty of a challenge has less to do with my skills or abilities than simply whether or not I understand the problem. If I'm not confident what the problem is asking, <strong>get clarification</strong>! You'll save a lot of time and headache.
+        </p>
+        <h3>A different kind of problem</h3>
+        <p>
+          The above example of wrangling a block takes place in an environment where there is a pretty clear if perhaps complicated problem. When the problem is defined for you, and different people have managed to solve it before, then it's in a problem domain which can be approached by sensing, categorizing or analyzing, and then responding.
+        </p>
+        <p>
+          These terms, 'clear', 'complicated', 'sense' etc are language from a framework named Cynefin (pronounced 'kinevvin'), developed almost 25 years ago by Dave Snowden.
+        </p>
+        <img class="image" src="image-directory/cynefin-model.png">
+        <p>
+          To me, the challenge was complicated because as a new learner, cause and effect wasn't entirely obvious - I had to analyze why my actions produced certain effects. With time and experience, I'll consider such problems to be 'simple' (the framework has seen a revision since this original and the category 'simple' is now more commonly referred to as 'obvious' or sometimes, for alliteration geeks, 'clear').
+        </p>
+        <p>
+          But how do we solve problems which are complex or chaotic? This framework points us in a different direction to simply reading the situation and responding with something we have a high degree of certainty about.
+        </p>
+        <h3>Naomi moves to the Bay of Plenty</h3>
+        <p>
+          Before starting this course with Dev Academy, I wanted to move out of my parents' house. I'd been stuck there since coming back to the country a couple months before the Covid19 outbreak, and in the meantime I'd become the responsible guardian of a jack russell / fox terrier cross.
+        </p>
+        <p>
+          My backup accommodation, Beesting, a 1998 Toyota Hiace fitted out to the minimum specs for a Self-Contained sticker, was not going to give me the supportive lifestyle I needed for a bootcamp, especially over winter.
+        </p>
+        <p>
+          I had a problem (finding a house), a timeline (before April 10), and a set of conditions (must be friendly to dogs, ideally with lots of room so Tama could run around as much as terriers need to without pulling my attention from my studies; and the place needed wifi).
+        </p>
+        <p>
+          There are simple cause and effect approaches that might work in a situation like this. It's not as simple as filling out a form and receiving the keys to some perfect house that's been sitting around waiting for someone like you to come along. Even if the problem is broken down into steps, there is no guarantee of result (<em>especially in this housing crisis amirite?</em>)
+        </p>
+        <p>
+          So, initially, my strategy started with a probe. I had a phone call with my best friend, also a dog owner, ranting about our current living situations. This yielded a decision: start looking for a place together.
+        </p>
+        <p>
+          We agreed to the parameters of what we wanted to yield from our search, and started to keep an eye on the rental market.
+        </p>
+        <p>
+          Every time a contender surfaced, we would weigh up our parameters, our dealbreakers vs the nice-to-haves, and if it broke no deals and was nice in some way, we put in an application.
+        </p>
+        <p>
+          As the timeline rapidly shrank (we started looking in January and were fruitless come March), our desperation pushed those nice to haves to the back burner. Our response changed because our sense had changed after continual re-probing. Things were looking pretty complicated.</p>
+        <p>
+          In mid March we had been shortlisted for two houses; in Nelson, and Amberly. I started to say goodbye to the people around me. It looked like I could be moving in a week or two, and worst case, three. But the response was out of our control: we didn't get either of these houses.
+        </p>
+        <p>
+          I was starting to feel the pressure. I had to reevaluate my commitment to move somewhere <em>with</em> my BFF and wrote to a nice looking place in the Hawkes Bay advertising a room. When they wrote back saying they weren't open to a dog at the moment, I really started freaking out; it felt like there was no place on earth where me and my dog could find home, peace, grounding. No one wanted us.
+        </p>
+        <p>
+          That weekend, my parents had an AirBnb booking and I had to evacuate the house. Unfortunately, BeeSting was getting some work done. I crashed on my sister's couch. Then my BFF texted saying some health issues had come up and she needed to stay in Auckland. Every piece of the plan was broken... I was entering chaos territory.
+        </p>
+        <p>
+          Reading this story, you might be wondering what was going on with my emotions. I encourage you to imagine what it would feel like if the world suddenly opened up beneath you and as you grasped in every direction around you, anything solid simply crumbled in your hand. 
+          <br>The only thing left for you to do is to let go.
+        </p>
+        <p>
+          So I kinda surrendered to the insanity. This was a block that I could do nothing about. And therein lay my salvation: the courage to accept what I couldn't change.
+        </p>
+        <p>
+          On Tuesday morning I had a meeting with a colleague in the USA. With no plan, no purpose, no goal, when she asked me how I was doing I said "well I'm struggling to find a house and feeling pretty nervous". And to my surprise, this woman all the way over in Iowa said, "I know someone in New Zealand who's moving out of their house. Want me to introduce you?"
+        </p>
+        <p>
+          It was a stroke of fate. I hadn't imagined that someone across the Pacific from here could hold a key to unlock the exact property which would solve my problem. I simply acted, my colleague sensed a possibility, and I responded to the invitation.
+        </p>
+        <p>
+          What does that story have to teach us about solving problems?
+          <br>Think back to the emotional stress when I was blocked in the first story. What do these two have in common?
+        </p>
+        <p>
+          That it takes space, time and compassion to rise to a challenge. It's okay to take a break because things change: whether it's about building new neural connections, or letting fate take over. But most importantly, it's about <strong>not giving up</strong>. Although I surrendered my ability to force a result in my house hunt, I still kept to my goal of moving somewhere more supportive, and so it was worth mentioning to my colleague. I didn't forget the goal or abandon hope, but the appropriate response changed according to the nature of the situation.
+        </p>
+        <p>
+          When we're in complex terrain we might work with methods like brainstorming, to help us make connections between a lot of different factors in the situation. We can also look for elements inside something complex which can be reduced to a manageable size. Or we can journal to gain insight into possible areas we might want to explore, what expectations we are holding, how we might test an assumption or move something small to then observe and see what happens to the big picture; keep making incremental changes and paying attention to the response.
+        </p>
+        <p>
+          There are active and passive ways to lean into a problem. Assessing our position in the Cynefin can guide us in how to be with it. If it's complicated, can it be simplified? If not, that doesn't mean it's worth giving up; we might just need to ask for help from someone who has more experience, or look up some tutorials online. 
+          <br>Just because it's complex or chaotic, should we forfeit being active in resolving a problem? Not entirely, we just might want to find a different approach; like taking stock of the bigger picture and/or take creative and unpredictable risks.
+        </p>
+        <p> 
+          Accept what you can't change, but have courage to change the things you <strong>can</strong>, to rise to the challenge; and keep practicing the ability to tell the difference, so our problem solving approach is suited the situation.
+        </p>
+        <br><br>
+
+      </span>
+
+      <div class="menu">
+        <h3>Menu</h3>
+        <ul>
+          <br>
+        <li><a href="#">Blog Roll</a></li>
+        <li><a href="https://nextstepnaomi.com" target="_blank">Projects</a></li>
+        <li><a href="https://link.bar/naomi" target="_blank">Links</a></li>
+        <li><a href="mailto:hmu@nextstepnaomi.com">Contact</a></li>
+          <br><br>
+        </ul>
+        <div id="twitter">
+          <div>
+          <a class="twitter-timeline" data-width="280" data-height="440" data-dnt="true" href="https://twitter.com/to_withyou?ref_src=twsrc%5Etfw">Sometimes Naomi tweets</a> 
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+          </div>
+        </div>
+      
+      </div>
+    </span>
+
+    <footer> &#128099; Made with curiosity by noms kinself &#128099;
+    </footer>
+  </body>
+
+
+</html>
