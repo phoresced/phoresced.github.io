@@ -119,10 +119,10 @@ h3 {
  border-width: 25px;
  border-radius: 25%;
   text-align: left;
-  font-size: 18px;
+  font-size: 16pt;
   position: relative;
   top: 5px;
-  padding: 10em;
+  padding: 5em;
   padding-top: 8px;
   padding-bottom: 8px;
   justify-content: space-around;
@@ -150,18 +150,20 @@ h3 {
   flex-wrap: nowrap;
 
 }
+
 .core ul {
   text-align: left;
   text-justify: inter-word;
-  font-size: 18px;
+  font-size: 16pt;
   position: relative;
-  left: 25%;
+  left: 10%;
   max-width: 600px;
   flex-wrap: wrap;
   top: 2px;
   padding: 1em;
   margin-right: 30px;
   justify-content: space-around;
+  font-family: Helvetica, Arial, sans-serif;
   z-index: 1;
 }
 
@@ -176,11 +178,27 @@ h3 {
 }
 
 .core ol {
-  font-size: 16pt;
+  font-size: 14pt;
   position: relative;
-  left: 30%;
-  justify-content: space-evenly;
-  font-family: Arial, Helvetica, sans-serif;
+  left: 10%;
+  justify-content: space-around;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.list {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 95%;
+  width: 60%;
+  top: 2px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 1;
+  background: #f7a38ec7;
+  border-width: 25px;
+  border-radius: 5%;
 }
 
 .sidebar {
@@ -295,9 +313,11 @@ p {
   margin: 5px;
   flex: 2 1 96px;
   position:relative;
+  margin-left: 15%;
   flex-wrap: nowrap;
   align-content: center;
-  max-width: 100%; 
+  max-width: 90%; 
+  width: 70%;
   height: auto;
 }
 
